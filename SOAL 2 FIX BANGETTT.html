@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAL2</title>
+    <style>
+        .header-img {
+            width: 100%; 
+            height: 90px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #999999; 
+            color: #000000;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        fieldset {
+            width: 75%;
+            margin-right: 5%;
+            margin-bottom: 20px;
+        }
+
+        aside {
+            width: 15%;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="email"], input[type="date"], input[type="file"], input[type="tel"], textarea {
+            background-color: #c8c1c1; 
+        }
+
+        .textarea-container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select, textarea {
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <img src="https://i.pinimg.com/originals/c8/b3/d6/c8b3d6039b73c9210d8db83a1d4545d5.jpg" alt="Header Image" class="header-img">
+        <fieldset>
+            <label for="email">Email : </label>
+            <input type="email"><br><br>
+
+            <label for="Nama">Nama : </label>
+            <input type="text"><br><br>
+
+            <label for="jeniskelamin">Jenis Kelamin : </label>
+            <select id="jeniskelamin">
+                <option value="L">L</option>
+                <option value="P">P</option>
+            </select><br><br>
+
+            <label for="birthday">Tempat, tanggal lahir :</label>
+            <input type="text" id="tempat-lahir" name="tempat-lahir">
+            <input type="date" id="tanggal-lahir" name="tanggal-lahir"><br><br>
+
+            <label for="No.Telpon">No.Telpon : </label>
+            <input type="tel"><br><br>
+
+            <label for="alamat">Alamat : </label>
+            <input type="text"><br><br>
+        </fieldset>
+
+        <aside>
+            <fieldset>
+                <img src="https://i.pinimg.com/originals/cf/e7/46/cfe7465276e9112647e3941bdf57023a.jpg" alt="Header Image" class="header-img">
+            </fieldset>
+        </aside>
+       
+        <fieldset>
+            <label for="divisi1">Divisi 1 :</label>
+            <select id="divisi1" name="divisi1">
+                <option value="PSDM">PSDM</option>
+                <option value="Kajian Strategi">Kajian Strategi</option>
+                <option value="Jaringan Eksternal">Jaringan Eksternal</option>
+                <option value="Minat dan Bakat">Minat dan Bakat</option>
+                <option value="Kesejahteraan Mahasiswa">Kesejahteraan Mahasiswa</option>
+                <option value="Sosial Masyarakat">Sosial Masyarakat</option>
+                <option value="Manajement Isu dan Opini">Manajement Isu dan Opini</option>
+                <option value="Sinergi Mahasiswa">Sinergi Mahasiswa</option>
+                <option value="Kewirausahaan dan Kemahasiswaan">Kewirausahaan dan Kemahasiswaan</option>
+            </select><br><br>
+
+            <div class="textarea-container">
+                <label for="textarea">Alasan :</label>
+                <textarea name="alasan" id="textarea" rows="10" cols="60"></textarea>
+            </div><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="divisi2">Divisi 2 :</label>
+            <select id="divisi2" name="divisi2">
+                <option value="PSDM">PSDM</option>
+                <option value="Kajian Strategi">Kajian Strategi</option>
+                <option value="Jaringan Eksternal">Jaringan Eksternal</option>
+                <option value="Minat dan Bakat">Minat dan Bakat</option>
+                <option value="Kesejahteraan Mahasiswa">Kesejahteraan Mahasiswa</option>
+                <option value="Sosial Masyarakat">Sosial Masyarakat</option>
+                <option value="Manajement Isu dan Opini">Manajement Isu dan Opini</option>
+                <option value="Sinergi Mahasiswa">Sinergi Mahasiswa</option>
+                <option value="Kewirausahaan dan Kemahasiswaan">Kewirausahaan dan Kemahasiswaan</option>
+            </select><br><br>
+
+            <div class="textarea-container">
+                <label for="textarea2">Alasan :</label>
+                <textarea name="alasan2" id="textarea2" rows="10" cols="60"></textarea>
+            </div><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="CV">CV :</label>
+            <input type="file"><br><br>
+
+            <button type="submit" align="center">Submit</button><br>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

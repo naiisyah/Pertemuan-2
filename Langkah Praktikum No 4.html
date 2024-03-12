@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+<!-- Element <label> dikaitkan dengan elemen form lain menggunakan attribute for.
+Nilai atribut for harus sama dengan nilai atribut id dari elemen form yang ingin
+dikaitkan. Teks di dalam tag <label> akan ditampilkan sebagai label deskriptif di
+dekat elemen formulir terkait. -->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+<!-- id digunakan untuk menandai suatu teks sedangkan nama sebagai penandaa rekuesan pengisi -->
+<!-- Element <select> digunakan untuk membuat daftar dropdown.
+ -->
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br>
+<!-- Element Radio Buttons merupakan tombol yang digunakan untuk membuat
+beberapa pilihan yang hanya bisa dipilih satu saja. Cocok untuk kasus seperti
+membuat kuis pilihan ganda di mana hanya ada satu jawaban yang benar. -->
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+<!-- Element <checkbox> untuk membuat pengguna bisa memilih satu atau
+beberapa pilihan yang bisa di aktif dan non-aktifkan dengan sebuah tanda
+centang. -->
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+<!--textarea memungkinkan pengguna untuk memasukkan teks lebih panjang daaripada inpt type="text"  -->
+        <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+        </textarea><br>
+<!-- button dapat ditaruh dimanapun diluar maupun di dalam form -->
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button><br>
+<!-- Attribute Action pada form HTML menandakan ke tautan mana data ini akan
+dikirim dan diolah -->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+        <input type="submit" value="Submit"><br>
+<!-- MACAM INPUT -->
+<!-- text digunakan untuk menginput text yang terbatas -->
+        <input type="text"><br>
+<!-- button untuk membuat tombol bisa di luar dan dalam -->
+        <input type="button"><br>
+<!-- checkbox digunakan untuk memilih beberapa pilihan -->
+        <input type="checkbox"><br>
+<!-- color untuk memilih warna -->
+        <input type="color"><br>
+<!-- date untuk tanggal, bulan, dan tahun -->
+        <input type="date"><br>
+<!-- datetime-local untuk hari, bulan, tahun, dana waktunya/jam -->
+        <input type="datetime-local"><br>
+<!-- email untuk input email saja -->
+        <input type="email"><br>
+<!-- file untuk menginputkan file dari pc kita -->
+        <input type="file"><br>
+<!--tersembunyi dan tidak dapat dilihat oleh user. Namun objek form ini menawarkan fleksibilitas yang dapat dimanfaatkan oleh programmer untuk menyisipkan suatu data untuk diproses -->
+        <input type="hidden"><br>
+<!-- untuk input gambar pengguna dapat mengupload gambar -->
+        <input type="image"><br>
+<!-- month untuk inputan bulan dan tahun -->
+        <input type="month"><br>
+<!-- number untuk inputan nomer dimana akan ada panah atas dan bawah -->
+        <input type="number"><br>
+<!-- passwor untuk memasukkan basword yang akan menjadi .... dan dapat dilihat maupun di sembunyikan -->
+        <input type="password"><br>
+<!-- radio digunakan agar kita dapat memilih satu pilihan saja daari berbagai pilihan -->
+        <input type="radio"><br>
+<!-- pada range dapat diisi sesuia dengan range yang kita inginkan -->
+        <input type="range"><br>
+<!-- reset untuk menghilangkan isian -->
+        <input type="reset"><br>
+<!-- search digunakan untuk pilihan misalnya kita mencari alamat jogja dan akan muncul alamatnya -->
+        <input type="search"><br>
+<!-- submit untuk kirim form biasanya pada akhiran -->
+        <input type="submit"><br>
+<!-- untuk menginputkan nomor telpon -->
+        <input type="tel"><br>
+<!-- time untuk inputan waktu/jamnya -->
+        <input type="time"><br>
+<!-- memungkinkan pengguna untuk menginputkan url atau mengedit -->
+        <input type="url"><br>
+<!-- week untuk inputan minggu ke berapa yang dimulai pada minngu 1 merupakan januari -->
+        <input type="week"><br>
+<!-- Atribut readonly dimana atribut ini hanya daapat dilihat tidak dapat diubah -->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"> <br>
+<!--Atribut disabled agar inputan data tidak bisa dimanipulasi akan berwarna abu-abu  -->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+<!-- Atribut size -->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="4"><br>
+<!-- Atribute placeholder -->
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone"
+        placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+<!-- Atribut require untuk penunjuk dimana penunjuk tersebut tidak dapat diubah -->
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+<!-- Atribut autofokus dimana kursor pengguna akan langsung ke inputan -->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" autofocus><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+<!-- submit button lebih baik daripada submit yang memakai input -->
+        <button type="submit">Submit</button><br>
+<!-- submit = Pada sebuah tampilan formulir, dibutuhkan tombol yang akan pengguna tekan
+ketika sudah selesai mengisi data sebagai penanda untuk mulai melakukan
+proses terhadap data tersebut. -->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+<!-- Atribut Formmethod -->
+    <form action="/action_page.php" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit using GET">
+        <input type="submit" formmethod="post" value="Submit using POST">
+<!-- Geaphics Kita bisa membuat gambar SVG di sebuah halaman HTML dengan tag <svg>.
+Kita bisa membuat path, berbagai bentuk, bahkan text dengan svg. SVG
+merupakan singkatan dari 'Scalable Vector Graphics', ia adalah salah satu format
+untuk menampilkan gambar.-->
+        <svg width="200" height="200">
+        <rect width="200" height="200"
+        style="fill:white;stroke-width:10;stroke:blue" />
+        <circle cx="50" cy="50" r="40" stroke="red" stroke-width="2"
+        fill="orange" />
+        </svg>
+        <canvas id="myCanvas" width="400" height="200"></canvas>
+<!-- graphics diatas baru kanfanya saja untuk bisa mmneggambar kita harus menggunakan javascript -->
+        <script>
+// get elemnt by id di gunakan untuk mengambil canvanya
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+
+            // menggambar garis
+            ctx.moveTo(0, 0);
+            ctx.lineTo(200, 100);
+            ctx.stroke();
+
+            // menggambar tulisaan
+            ctx.font = "30px Arial";
+            ctx.fillText("Hello Word", 220, 150);
+        </script>
+
+    </form>
+<!-- Atribut Formenctype menentukan bagaimana data pada form akan dienkripsi
+ketika dikirimkan (hanya untuk form dengan metode "post").
+-->
+    <form action="/action_page_binary.asp" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multipart/form-data"
+        value="Submit as Multipart/form-data">
+    </form>  
+<!-- Atribut fromaction  ditaruh di tag form-->
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+   </form>
+<!-- Method Attribut = adalah jenis metode yang kita gunakan pada saat mengirim data tag methode di taruh di tag form -->
+<!-- method get Dengan method get kita akan menampilkan nilai dari input nya di URL. Karena itu
+hindari menggunakan get untuk informasi yang panjang dan bersifat rahasia -->
+<!-- <form action="/action_page.php" method="get"></form> -->
+<!-- Method post Dengan method post kita akan menyembunyikan nilai dari input yang kita kirim.
+Cocok untuk mengirim data yang banyak/panjang dan bersifat rahasia -->
+<!-- <form action="/action_page.php" method="post"></form> -->
+     
+</body>
+</html>
