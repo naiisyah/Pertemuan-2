@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- output -->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="number" id="a" value="35">
+        + <input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output><br><br>
+<!-- fieldset -->
+        <fieldset>
+            <label for="fname">Nama:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Alamat:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Tempat, tanggal lahir:</label>
+            <input type="text" id="birthday" nama="birthday">
+            <input type="date" id="birthday" name="birthday"><br><br>
+        </fieldset><br>
+<!-- legend -->
+        <fieldset>
+            <legend>Biodata:</legend>
+            <label for="fname">Nama:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Alamat:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Tempat, tanggal lahir:</label>
+            <input type="text" id="birthday" nama="birthday">
+            <input type="date" id="birthday" name="birthday"><br><br>
+        </fieldset><br>
+<!-- datalist -->
+        <label for="browser">Choose your browser from the list:</label><br>
+        <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist><br><br>
+<!-- option -->
+        <label for="cars">Choose your favorite car:</label><br>
+            <select id="cars">
+                <option value="civic">Civic</option>
+                <option value="pajero">Pajero Sport</option>
+                <option value="supra">Supra</option>
+                <option value="audi">Audi</option>
+                <option value="tidak ada">Tidak Ada</option>
+            </select><br>
+<!-- optgroup -->
+        <label for="animals">Choose your favorite animals:</label><br>
+            <select  name="animals" id="animals">
+                <optgroup label="Pisces">
+                    <option value="Ikan air tawar">Ikan air tawar</option>
+                    <option value="Ikan air asin">Ikan air asin</option>
+                </optgroup>
+                <optgroup label="Amfibia">
+                    <option value="Katak">Katak</option>
+                    <option value="Salamender">Salamender</option>
+                    <option value="Caecelian">Caecelian</option>
+                </optgroup>
+                <optgroup label="Aves">
+                    <option value="Penguin">Penguin</option>
+                    <option value="Burung merpati">Burung merpati</option>
+                    <option value="Flamingo">Flamingo</option>
+                </optgroup>
+                <option value="tidak ada">Tidak ada</option>
+            </select>
+    </form>
+</body>
+</html>
