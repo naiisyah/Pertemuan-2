@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+
+public class Film {
+    String title;
+    String genre;
+    int duration;
+    int availableSeats;
+
+    Film(String title, String genre, int duration, int availableSeats) {
+        this.title = title;
+        this.genre = genre;
+        this.duration = duration;
+        this.availableSeats = availableSeats;
+    }
+
+    String getTitle() {
+        return title;
+    }
+
+    String getGenre() {
+        return genre;
+    }
+
+    int getDuration() {
+        return duration;
+    }
+
+    int getAvailableSeats() {
+        return availableSeats;
+    }
+
+    void bookFilm(int numberOfTickets) {
+        if (numberOfTickets <= availableSeats) {
+            availableSeats -= numberOfTickets;
+        } else {
+            System.out.println("Pesanan tidak dapat diproses. Kursi tidak tersedia.");
+        }
+    }
+}
