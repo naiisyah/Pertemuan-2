@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+public class Produk {
+// Definisikan kelas produk
+    String nama;
+    double harga;
+    int jumlah;
+
+    // Konstruktor untuk inisialisasi produk
+    public Produk(String nama, double harga, int jumlah) {
+        this.nama = nama;
+        this.harga = harga;
+        this.jumlah = jumlah;
+}
+    // Method untuk menghitung total harga per produk
+    public double getTotalHarga() {
+        return harga * jumlah;
+    }
+}
