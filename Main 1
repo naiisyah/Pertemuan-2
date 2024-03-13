@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+public class Main {
+    public static void main(String[] args) {
+        // Inisialisasi keranjang belanja
+        Keranjang keranjang = new Keranjang();
+
+        // Tambahkan beberapa produk ke dalam keranjang
+        keranjang.tambahProduk(new Produk("Buku", 5000, 2));
+        keranjang.tambahProduk(new Produk("Pensil", 1000, 3));
+        keranjang.tambahProduk(new Produk("Pensil Warna", 2000, 1));
+        keranjang.tambahProduk(new Produk("Penghapus", 500, 4));
+        keranjang.tambahProduk(new Produk("Penggaris", 1500, 2));
+
+        System.out.println("\n============================\n");
+        // Tampilkan jumlah barang, daftar barang, dan total harga belanjaan
+
+        keranjang.tampilkanDaftarProduk();
+        System.out.println("Total harga yang harus dibayar: Rp" + keranjang.hitungTotalHarga());
+    }
+}
