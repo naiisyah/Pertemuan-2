@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+public class Keranjang {
+    ArrayList<Produk> daftarProduk = new ArrayList<>();
+    int totalBarang = 0; // Menyimpan jumlah total barang dalam keranjang
+
+    // Method untuk menambahkan produk ke dalam keranjang
+    public void tambahProduk(Produk produk) {
+        if (totalBarang + produk.jumlah <= 5) { // Periksa apakah jumlah barang tidak melebihi 5
+            daftarProduk.add(produk);
+            totalBarang += produk.jumlah; // Tambahkan jumlah barang baru ke total barang
+            System.out.println(produk.nama + " Berhasil memasukkan ke keranjang.");
+        } else {
+            System.out.println("Wes too, keranjage kebak i looo!!.");
+        }
+    }
+
+    // Method untuk menampilkan daftar barang dalam keranjang beserta jumlahnya
+    public void tampilkanDaftarProduk() {
+        System.out.println("Jumlah barang di keranjang saat ini: " + totalBarang);
+        System.out.println("Barang pada keranjang:");
+        for (Produk produk : daftarProduk) {
+            System.out.println("# " + produk.nama + ": " + produk.jumlah + " buah");
+        }
+    }
+
+    // Method untuk menghitung total harga belanjaan
+    public double hitungTotalHarga() {
+        double totalHarga = 0;
+        for (Produk produk : daftarProduk) {
+            totalHarga += produk.getTotalHarga();
+        }
+        return totalHarga;
+    }
+}
