@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        Movieapp movieApp = new Movieapp();
+
+        Film avatar = new Film("Avatar", "Action", 120, 90);
+        Film AgakLain = new Film("AgakLain", "Drama", 95, 64);
+
+        movieApp.addFilm(avatar);
+        movieApp.addFilm(AgakLain);
+
+        movieApp.displayFilms();
+
+        movieApp.searchFilm("AgakLain");
+        movieApp.searchFilm("Frozen");
+
+        movieApp.bookFilm(avatar, 2);
+        movieApp.bookFilm(AgakLain, 100);
+        movieApp.displayFilms();
+
+        movieApp.searchBooking(376);
+        movieApp.searchBooking(000);
+    }
+}
